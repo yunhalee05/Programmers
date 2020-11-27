@@ -42,6 +42,17 @@ vector<int> solution(vector<int> answers) {
             }
         }
     }
+
+    /*
+    1. 여기서 max를 일일이 따로 지정해주지 않고,[algorithm]을 include하고 for 문을 다 돌고나서
+    int max = *max_element(cnt.begin(), cnt.end());
+    를 사용해주면 훨씬 간결하게 할 수 있다. 
+
+
+    2. 또 %를 이용해서 일일이 써주지 말고 바로 
+    answer[i]==One[i/One.size()]이런식으로 넣어줘서 더 간결하게 할 수도 있다. 
+
+   */
     for (int i = 0; i < 3; i++)
     {
         if (cnt[i] == max)
