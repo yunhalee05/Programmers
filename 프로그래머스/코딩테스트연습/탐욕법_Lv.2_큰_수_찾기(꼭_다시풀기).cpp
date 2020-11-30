@@ -21,7 +21,9 @@ string solution(string number, int k) {
         }
         answer += max;
     }
-
+    
 
     return answer;
 }
+
+
